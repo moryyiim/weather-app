@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  background-image: url('./assets/cold.png');
+  background-size: cover;
+  background-position: bottom;
+  transition-duration: 2000ms;
+  transition-timing-function: ease-in-out;
+}
+
+.app.warm {
+  background-image: url('./assets/warm.png');
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  padding: 25px;
+}
+
+.search-box {
+  max-width: 700px;
+  margin: 0 auto 75px;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  border-radius: 0 0 16px 16px;
+  margin-top: -25px;
+  font-size: 20px;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 5px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.search-box .search-bar:hover {
+  cursor: pointer;
+}
+
+.search-box .search-bar:focus {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.search-box .search-bar::placeholder {
+  color: white;
+}
+
+.search-box .search-bar:focus::placeholder {
+  color: #6e6e6e;
+  transition-duration: 1000ms;
+  transition-timing-function: ease-in-out;
+}
+
+.location-box .location {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px rgba(50, 50, 50, 0.5);
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: #fff;
+  font-size: 102px;
+  font-weight: 900;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.weather-box .weather {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.app .description {
+  position: relative;
+  right: -90%;
+  transform-origin: 0 0;
+  transform: rotate(270deg);
+}
+
+.app .bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  text-shadow: 1px 3px rgba(50, 50, 70, 0.5);
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.bold {
+  font-weight: 700;
+} 
+
+.feels, .humidity, .wind {
+  color: #fff;
+}
+
+/* Typography */
+
+p {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
