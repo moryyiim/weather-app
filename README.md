@@ -1,5 +1,7 @@
 # Weather App
 
+This weather app was built using HTML, CSS, Javascript, and Openweathermap API
+
 # LIVE
 
 https://weatherly-api-app.netlify.app/
